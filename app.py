@@ -8,4 +8,4 @@ SECRET_KEY = 'caocaoshuodaocaocao'
 def page():
 	return render_template('index.html')
 
-app.run(debug=True)
+app.run(debug=False)
