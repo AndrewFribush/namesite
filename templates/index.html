@@ -15,7 +15,7 @@
     <script type="text/javascript" src="{{ url_for('.static', filename='text/javascript') }}"></script>
     <!-- Add fancyBox main JS and CSS files -->
     <script type="text/javascript" src="{{ url_for('.static', filename='text/javascript') }}"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='css/jquery.fancybox.css?v=2.1.5') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='css/jquery.fancybox.css?v=2.1.5|e') }}" media="screen" />
     <script>
           $(document).ready(function() {
             $(".fancybox-thumb").fancybox({
@@ -52,7 +52,7 @@
     <div class="clearfix">
       <!--Profile container-->
       <div id="profile" class="container">
-        <div class="span3"> <img src="img/mini.png"> </div>
+        <div class="span3"> <img src="{{ url_for('.static', filename='img/mini.png') }}"> </div>
         <div class="span5">
           <h1>Andrew Fribush</h1>
           <h3>Software Engineer and Entrepeneur</h3>
@@ -81,24 +81,24 @@
         <h2>My Work</h2>
         <ul class="work-images">
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/1.jpg" title="Image 01"><img src="img/1-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/1.jpg" title="Image 01"><img src="{{ url_for('.static', filename='img/1-thumb.jpg') }}" /></a></div>
           </li>
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/2.jpg"><img src="img/2-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/2.jpg"><img src="{{ url_for('.static', filename='img/2-thumb.jpg') }}" /></a></div>
           </li>
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/3.jpg"><img src="img/3-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/3.jpg"><img src="{{ url_for('.static', filename='img/3-thumb.jpg') }}" /></a></div>
           </li>
         </ul>
         <ul class="work-images">
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/4.jpg"><img src="img/4-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/4.jpg"><img src="{{ url_for('.static', filename='img/4-thumb.jpg') }}" /></a></div>
           </li>
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/5.jpg"><img src="img/5-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/5.jpg"><img src="{{ url_for('.static', filename='img/5-thumb.jpg') }}" /></a></div>
           </li>
           <li>
-            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/6.jpg"><img src="img/6-thumb.jpg" /></a></div>
+            <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/6.jpg"><img src="{{ url_for('.static', filename='img/6-thumb.jpg') }}" /></a></div>
           </li>
         </ul>
         <!--Dummy images by The Fox And King :: http://dribbble.com/snootyfox-->
